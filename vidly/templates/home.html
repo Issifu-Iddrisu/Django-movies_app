@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<a href="{% url 'movies:index' %}" style="font-size: 30px;user-select: none;">Movies</a>
+<hr>
+
+<img src="{% static 'terminator.jpg' %}" alt="terminator" class="img-fluid">
+<img src="{% static 'hangover.png' %}" alt="hangover" class="img-fluid">
+
+{% endblock %}
